@@ -1,5 +1,13 @@
+language: python
+python:
+    - "3.9.1"
+
+install:
+ - pip install -r local_requirements.txt
+
 before_script:
- - pip install -U -r local_requirements.txt
+ - flake8 app tests
+
 
 script:
- - flake8 app tests
+ - python app/main.py
