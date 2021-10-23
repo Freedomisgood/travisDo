@@ -1,8 +1,5 @@
 before_script:
- - pip install -U -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple --extra-index-url http://pypi.douban.com/simple --trusted-host pypi.douban.com
- - pip install -U -r local_requirements.txt -i https://pypi:TJttTRykbZd3gnWi@nexus.17bdc.com/repository/pypi/simple
- - pip install -U -r test_requirements.txt -i https://mirrors.aliyun.com/pypi/simple --extra-index-url http://pypi.douban.com/simple --trusted-host pypi.douban.com
+ - pip install -U -r local_requirements.txt
 
 script:
  - flake8 app tests
- - flask test -x
