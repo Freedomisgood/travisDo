@@ -1,23 +1,8 @@
 [run]
 omit=
-    */urls.py
-    */admin_urls.py
-    */cache_keys.py
-    */constant.py
-    */*deprecated*.py
-    */*statistics*.py
-    */utils.py
-    app/extensions/*
-    app/ding/*
-    app/wechat_pay/*
+    app/*
+    tests/*
 
-    app/multimedia_course/practice_handler.py
-    app/square/temp.py
-    app/square/importer.py
-    app/schedule/importer.py
-    app/schedule/gen_mbook.py
-    app/async_tasks/sa.py
-    app/async_tasks/camp_ending.py
 
 [report]
 show_missing = True
